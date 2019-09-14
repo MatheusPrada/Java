@@ -9,7 +9,6 @@ public class ex12 {
     
       int vetor [] = new int [5];
       int fatorial [] = new int [5];
-      int aux = 0;
         
       for(int x = 0; x < 5; x++){
 
