@@ -4,7 +4,7 @@
 /*/
 //-------------------------------------------------------------------
 
-public class ex12 {
+public class ex13 {
     public static void main (String [] args){
     
       int vetor [] = new int [100];
@@ -15,23 +15,22 @@ public class ex12 {
                 vetor[x] =  1 + (int) (Math.random() * 1000); //coloca numero positivo
             }else{
                 vetor[x] =  -1 * (1 + (int) (Math.random() * 1000));  //coloca numero negativo
-            }
+            }            
+        }
 
-            vetor[] = BubbleSort(vetor[]);
-
-            System.out.println("Vetor organizado:");
-
-            for(int x = 0; x < 100; x++){
-                System.out.println(vetor[x]);
-            }
-            
+        vetor = BubbleSort(vetor);
+        
+        System.out.println("Vetor organizado:");
+        
+        for(int x = 0; x < 100; x++){
+            System.out.println(vetor[x]);
         }
     }
     
-    public static int BubleSort(int vetor[]) {
+    public static int[] BubbleSort(int[] vetor) {
 
         for(int x = 0; x < 100; x++){
-            for(int y = 0; y < 99, y++){
+            for(int y = 0; y < 99; y++){
 
                 int aux = 0;
 
@@ -43,6 +42,6 @@ public class ex12 {
             }
         }
         
-        return vetor[];
+        return vetor;
     }
   }  
